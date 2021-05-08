@@ -1,9 +1,9 @@
 const fs = require("fs");
 const readline = require("readline");
-const filePath = "./files/";
 const { pipeline } = require("stream/promises");
 const { encode, decode } = require("./caesar");
 
+const filePath = "./src/files/";
 class EventsHandling {
   constructor() {
     this.rl = readline.createInterface({
